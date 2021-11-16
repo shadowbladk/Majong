@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RestaurantMenu2"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout"
+    android:background="@color/black">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:id="@+id/iconContainer">
+
+        <ImageView
+            android:id="@+id/storeIcon"
+            android:contentDescription="@string/description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/storeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/iconContainer"
+        android:fontFamily="@font/open_sans_light"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/locationPin"
+        android:contentDescription="@string/description"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/storeName"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toEndOf="@+id/iconContainer"
+        android:src="@drawable/location_pin_red" />
+
+    <TextView
+        android:id="@+id/storeAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/storeName"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/locationPin"
+        android:text=""
+        android:fontFamily="@font/open_sans_light"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/iconContainer"
+        android:layout_centerVertical="true"
+        android:alignmentMode="alignBounds"
+        android:columnCount="2"
+        android:padding="10dp"
+        android:rowOrderPreserved="false"
+        android:useDefaultMargins="true"
+        android:id="@+id/gridLayout">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:gravity="center"
+            app:cardCornerRadius="30dp"
+            app:cardBackgroundColor="@color/white"
+            android:id="@+id/cardChoice1">
+
+            <ImageView
+                android:id="@+id/choice1"
+                android:contentDescription="@string/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@id/cardChoice1"
+                android:src="@drawable/choice1" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:gravity="center"
+            app:cardCornerRadius="30dp"
+            app:cardBackgroundColor="@color/white"
+            android:id="@+id/cardChoice2">
+
+            <ImageView
+                android:id="@+id/choice2"
+                android:contentDescription="@string/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@id/cardChoice2"
+                android:src="@drawable/choice2" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:gravity="center"
+            app:cardCornerRadius="30dp"
+            app:cardBackgroundColor="@color/white"
+            android:id="@+id/cardChoice3">
+
+            <ImageView
+                android:id="@+id/choice3"
+                android:layout_width="wrap_content"
+                android:contentDescription="@string/description"
+                android:layout_height="wrap_content"
+                android:tag="@id/cardChoice3"
+                android:src="@drawable/choice3" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:gravity="center"
+            app:cardCornerRadius="30dp"
+            app:cardBackgroundColor="@color/white"
+            android:id="@+id/cardChoice4">
+
+            <ImageView
+                android:id="@+id/choice4"
+                android:layout_width="wrap_content"
+                android:contentDescription="@string/description"
+                android:layout_height="wrap_content"
+                android:tag="@id/cardChoice4"
+                android:src="@drawable/choice4" />
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/reserveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="15dp"
+        android:text="@string/reserve" />
+
+</RelativeLayout>

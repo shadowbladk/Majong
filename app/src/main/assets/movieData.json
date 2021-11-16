@@ -1,0 +1,68 @@
+[
+  {
+    "name": "The Misfits",
+    "date": "11 November 2021",
+    "path": "the_misfits",
+    "genre": "Action / Adventure / Thriller",
+    "time": "1 hrs 34 mins",
+    "description": "misfits"
+  },
+  {
+    "name": "Eternals",
+    "date": "04 November 2021",
+    "path": "eternals",
+    "genre": "Action",
+    "time": "2 hrs 37 mins",
+    "description": "Another Marvel movie"
+  },
+  {
+    "name": "Escape Room 2 No Way Out",
+    "date": "11 November 2021",
+    "path": "escape_room_2",
+    "genre": "Horror / Thriller",
+    "time": "1 hrs 28 mins",
+    "description": "ESCAPE ROOM, 2 WAY OUT"
+  },
+  {
+    "name": "The Green Knight",
+    "date": "11 November 2021",
+    "path": "the_green_knight",
+    "genre": "Action / Adventure / Drama / Fantasy",
+    "time": "2 hrs 10 mins",
+    "description": "Brother of yellow knight"
+  },
+  {
+    "name": "Josee the Tiger and the Fish",
+    "date": "04 November 2021",
+    "path": "josee_the_tiger_and_the_fish",
+    "genre": "Animation / Drama / Romance",
+    "time": "1 hrs 39 mins",
+    "description": "tiger eat fish sad cry"
+  },
+  {
+    "name": "Dune",
+    "date": "21 October 2021",
+    "path": "dune",
+    "genre": "Adventure / Drama / Sci-Fi",
+    "time": "2 hrs 35 mins",
+    "description": "Hachi OFFICIAL Song MV"
+  },
+  {
+    "name": "Fast and Furious 9",
+    "date": "21 October 2021",
+    "path": "fast_and_furious_9",
+    "genre": "Action / Adventure / Crime",
+    "time": "2 hrs 23 mins",
+    "description": "UWU CAR GO BRRRRR"
+  },
+  {
+    "name": "No Time to Die",
+    "date": "07 October 2021",
+    "path": "no_time_to_die",
+    "genre": "Action / Adventure / Thriller",
+    "time": "2 hrs 44 mins",
+    "description": "PEW PEW PEW"
+  }
+
+]
+

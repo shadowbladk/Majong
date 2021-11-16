@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "64802514736",
+    "project_id": "realmajong-7ec43",
+    "storage_bucket": "realmajong-7ec43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64802514736:android:120921bc1e77eb2a890af5",
+        "android_client_info": {
+          "package_name": "com.example.realmajong"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64802514736-4gd4uj6jlnk7o3m6lfjjh5e3q3p7c4lt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWqRsYqGGdOdTpfDeeLw2e8DhkJ81s9kg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "64802514736-4gd4uj6jlnk7o3m6lfjjh5e3q3p7c4lt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

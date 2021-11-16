@@ -1,0 +1,44 @@
+[
+  {
+    "name": "MK Restaurants",
+    "location": "Sai Mai",
+    "logoPath": "logo_mk",
+    "bannerPath": "banner_mk"
+  },
+  {
+    "name": "Yayoi Japanese Restaurant",
+    "location": "Fashion Island",
+    "logoPath": "logo_yayoi",
+    "bannerPath": "banner_yayoi"
+  },
+  {
+    "name": "Pepper Lunch",
+    "location": "The Promenade",
+    "logoPath": "logo_pepper_lunch",
+    "bannerPath": "banner_pepper_lunch"
+  },
+  {
+    "name": "Gold Curry",
+    "location": "Seacon Square",
+    "logoPath": "logo_gold_curry",
+    "bannerPath": "banner_gold_curry"
+  },
+  {
+    "name": "Sushi Hiro",
+    "location": "Ramintra 57",
+    "logoPath": "logo_sushi_hiro",
+    "bannerPath": "banner_sushi_hiro"
+  },
+  {
+    "name": "MAGURO",
+    "location": "Chaengwattana",
+    "logoPath": "logo_maguro",
+    "bannerPath": "banner_maguro"
+  },
+  {
+    "name": "Kouen Sushi Bar",
+    "location": "The Walk (Kaset-Nawamin)",
+    "logoPath": "logo_kouen",
+    "bannerPath": "banner_kouen"
+  }
+]

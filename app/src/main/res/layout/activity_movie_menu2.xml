@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieMenu2"
+    android:background="@color/black">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dark_grey"
+        android:id="@+id/movieInfo">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/movieImage"
+                android:contentDescription="@string/description"
+                android:layout_width="110dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="25dp"
+                android:background="@color/white"
+                tools:background="@drawable/josee_the_tiger_and_the_fish"
+                />
+
+            <TextView
+                android:id="@+id/movieName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/movieImage"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@id/movieImage"
+                android:fontFamily="@font/open_sans_light"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movieDate"
+                android:layout_below="@id/movieName"
+                android:text=""
+                android:layout_alignStart="@id/movieName"
+                android:fontFamily="@font/open_sans_light"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movieGenre"
+                android:layout_below="@+id/movieDate"
+                android:layout_alignStart="@+id/movieDate"
+                android:textColor="@color/white"
+                android:fontFamily="@font/open_sans_light"
+                android:textSize="12sp"
+                android:text=""/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movieTime"
+                android:layout_below="@id/movieGenre"
+                android:layout_alignStart="@id/movieGenre"
+                android:textColor="@color/white"
+                android:fontFamily="@font/open_sans_light"
+                android:textSize="12sp"
+                android:text=""/>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:layout_below="@id/movieInfo"
+        android:id="@+id/line"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/middleLine"
+        android:layout_centerInParent="true"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="@color/dark_grey"
+        android:layout_below="@id/line"
+        android:layout_toStartOf="@id/middleLine"
+
+        android:id="@+id/cardShowtime">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textShowTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/showtime"
+                android:textColor="@color/gold"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/line"
+        app:cardBackgroundColor="@color/dark_grey"
+        android:layout_toEndOf="@id/middleLine">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/open_sans_light"
+                android:text="@string/information"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/black"
+        android:layout_below="@id/cardShowtime"
+        android:visibility="gone"
+        android:id="@+id/cardInfo">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/synopsis"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/open_sans_light"
+                android:layout_marginTop="10dp"
+                android:id="@+id/textSynopsis"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:id="@+id/textDescription"
+                android:fontFamily="@font/open_sans_light"
+                android:layout_marginTop="5dp"
+                android:textSize="11sp"
+                android:layout_below="@id/textSynopsis"
+                android:layout_marginStart="10dp"/>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cardSelectShowtime"
+        android:layout_below="@id/cardShowtime"
+        android:backgroundTint="@color/black">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/black"
+                android:id="@+id/bookingInfo">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/black"
+                        android:fontFamily="@font/open_sans_light"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/textMonth"
+                        android:scrollbars="none">
+
+                        <RelativeLayout
+                            android:id="@+id/layoutDates"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/open_sans_light">
+
+
+                        </RelativeLayout>
+                    </HorizontalScrollView>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/bookingInfo"
+                android:id="@+id/cardSeating"
+                android:backgroundTint="@color/black">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/relativeLayout">
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/black"
+                android:layout_below="@id/cardSeating"
+                android:id="@+id/cardReserveInfo"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textDateSelected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/date_selected"
+                        android:textColor="@color/white" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/textDateSelected"
+                        android:textColor="@color/gold"
+                        android:textStyle="bold"
+                        android:layout_alignTop="@id/textDateSelected"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/dash"
+                        android:id="@+id/dateSelected"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textNumberOfSeats"
+
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/white"
+                        android:layout_below="@id/textDateSelected"
+                        android:text="@string/number_of_seats"/>
+
+                    <TextView
+                        android:id="@+id/numberOfSeats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/textNumberOfSeats"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@id/textNumberOfSeats"
+                        android:text="@string/zero"
+                        android:textColor="@color/gold"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textSeatsSelected"
+
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/white"
+                        android:layout_below="@id/textNumberOfSeats"
+                        android:text="@string/seats_selected"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/textSeatsSelected"
+                        android:textColor="@color/gold"
+                        android:id="@+id/seatsSelected"
+                        android:textStyle="bold"
+                        android:layout_alignTop="@id/textSeatsSelected"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/dash"/>
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/seatsSelected"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/reserve"
+                        android:id="@+id/buttonReserve"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/gold"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</RelativeLayout>

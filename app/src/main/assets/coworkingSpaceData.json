@@ -1,0 +1,50 @@
+[
+  {
+    "name": "TTA Space",
+    "address": "MBK Center",
+    "path": "ttaspace",
+    "pathSF": "ttaspacesf"
+  },
+  {
+    "name": "Oneday Forward",
+    "address": "Prompong",
+    "path": "odf",
+    "pathSF": "odfsf"
+  },
+  {
+    "name": "HUBBA Thailand",
+    "address": "Chong Nonsi",
+    "path": "hubba",
+    "pathSF": "hubbasf"
+  },
+  {
+    "name": "Launchpad",
+    "address": "Surasak",
+    "path": "launchpad",
+    "pathSF": "launchpadsf"
+  },
+  {
+    "name": "Wolf Co-working Space",
+    "address": "Surasak",
+    "path": "wolf",
+    "pathSF": "wolfsf"
+  },
+  {
+    "name": "FabCafe Bangkok",
+    "address": "Aree",
+    "path": "fabcafe",
+    "pathSF": "fabcafesf"
+  },
+  {
+    "name": "Muchroom",
+    "address": "Saphan Khwai",
+    "path": "muchroom",
+    "pathSF": "muchroomsf"
+  },
+  {
+    "name": "Paperwork",
+    "address": "Chong Nonsi",
+    "path": "paperwork",
+    "pathSF": "paperworksf"
+  }
+]

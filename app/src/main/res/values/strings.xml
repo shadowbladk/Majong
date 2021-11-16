@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">RealMajong</string>
+    <string name="email">Email</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="password">Password</string>
+    <string name="month">NOV</string>
+    <string name="showtime">SHOWTIME</string>
+    <string name="information">INFORMATION</string>
+    <string name="synopsis">SYNOPSIS</string>
+    <string name="dash">-</string>
+    <string name="number_of_seats">Number of Seats:</string>
+    <string name="zero">0</string>
+    <string name="seats_selected">Seats Selected:</string>
+    <string name="date_selected">Date Selected:</string>
+    <string name="now_showing">NOW SHOWING</string>
+    <string name="description">description</string>
+    <string name="reserve">Reserve</string>
+    <string name="restaurants">Restaurants</string>
+    <item name="id" type="id" />
+    <item name="data" type="id" />
+    <item name="dayDate" type="id" />
+</resources>
